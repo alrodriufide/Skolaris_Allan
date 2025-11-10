@@ -42,6 +42,7 @@ app.use('/api/grades', gradesRoutes); // rutas calificaciones
 app.use('/api/reports', reportsRoutes); // rutas reportes
 app.use('/api/receipts', receiptsRoutes); // rutas recibos
 app.use('/api/simple', simpleRoutes); // rutas base de datos simple
+app.use('/api/simple-auth', simpleAuthRoutes); // rutas auth simple
 
 // Error handler
 app.use((err, req, res, next) => {
