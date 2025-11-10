@@ -36,6 +36,9 @@ app.use('/api/grupos', grupoRoutes); // ruta grupos
 app.use('/api/clases', claseRoutes); // ruta clases
 app.use('/api/academico', academicoRoutes);
 app.use('/api/asistencia', asistenciaRoutes); // ruta asistencias
+app.use('/api/grades', gradesRoutes); // rutas calificaciones
+app.use('/api/reports', reportsRoutes); // rutas reportes
+app.use('/api/receipts', receiptsRoutes); // rutas recibos
 
 // Error handler
 app.use((err, req, res, next) => {
