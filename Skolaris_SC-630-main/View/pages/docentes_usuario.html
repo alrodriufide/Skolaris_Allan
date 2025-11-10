@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- Primary Meta Tags -->
+  <title>Skolaris</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="title" content="Skolaris">
+  <meta name="author" content="Skolaris">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Sweet Alert -->
+  <link type="text/css" href="../vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+  <!-- Notyf -->
+  <link type="text/css" href="../vendor/notyf/notyf.min.css" rel="stylesheet">
+  <!-- Volt CSS -->
+  <link type="text/css" href="../css/volt.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
+    <a class="navbar-brand me-lg-5" href="pagina_principal.html">
+      <img class="navbar-brand-dark" src="../assets/img/brand/EscuelaLogo.png" alt="Logo" width="40" height="auto" />
+    </a>
+    <div class="d-flex align-items-center">
+      <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-800 text-white collapse" data-simplebar>
+    <div class="sidebar-inner px-4 pt-3">
+      <div class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
+        <div class="d-flex align-items-center">
+          <div class="avatar-lg me-4">
+            <img src="../assets/img/team/profile-picture-3.jpg" class="card-img-top rounded-circle border-white"
+              alt="Bonnie Green">
+          </div>
+          <div class="d-block">
+            <h2 class="h5 mb-3">Hi, Jane</h2>
+            <a href="examples/sign-in.html" class="btn btn-secondary btn-sm d-inline-flex align-items-center">
+              <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+              </svg>
+              Sign Out
+            </a>
+          </div>
+        </div>
+        <div class="collapse-close d-md-none">
+          <a href="#sidebarMenu" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu"
+            aria-expanded="true" aria-label="Toggle navigation">
+            <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <ul class="nav flex-column pt-3 pt-md-0">
+        <li class="nav-item">
+          <a href="../pagina_principal.html" class="nav-link d-flex align-items-center">
+            <span class="sidebar-icon">
+              <img src="../assets/img/brand/EscuelaLogo.png" height="35" width="auto" alt="Logo">
+            </span>
+            <span class="mt-1 ms-1 sidebar-text"
+              style="font-family: 'Inter', sans-serif; color: white; font-size: 18px;">Skolaris</span>
+          </a>
+        </li>
+        <li class="nav-item  ">
+          <a href="../pagina_principal.html" class="nav-link">
+            <span class="sidebar-icon">
+              <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+              </svg>
+            </span>
+            <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Inicio</span>
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a href="ver_normativa.html" class="nav-link">
+            <span class="sidebar-icon">
+              <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+            <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Ver Normativa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            data-bs-target="#views">
+            <span>
+              <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z" />
+                </svg>
+              </span>
+              <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Asistencia</span>
+            </span>
+            <span class="link-arrow">
+              <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </span>
+          <div class="multi-level collapse " role="list" id="views" aria-expanded="false">
+            <ul class="flex-column nav">
+              <li class="nav-item">
+                <a class="nav-link" href="asistencia_usuario.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Usuario</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="asistencia_docente.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Docente</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            data-bs-target="#views1">
+            <span>
+              <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+              </span>
+              <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Calificaciones</span>
+            </span>
+            <span class="link-arrow">
+              <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </span>
+          <div class="multi-level collapse " role="list" id="views1" aria-expanded="false">
+            <ul class="flex-column nav">
+              <li class="nav-item">
+                <a class="nav-link" href="calificaciones_usuario.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Usuario</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calificaciones_docente.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Docente</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            data-bs-target="#views2">
+            <span>
+              <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Horarios</span>
+            </span>
+            <span class="link-arrow">
+              <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </span>
+          <div class="multi-level collapse " role="list" id="views2" aria-expanded="false">
+            <ul class="flex-column nav">
+              <li class="nav-item">
+                <a class="nav-link" href="horarios_usuario.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Usuario</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="horarios_docente.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Docente</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="horarios_administrador.html">
+                  <span class="sidebar-text"
+                    style="font-family: 'Inter', sans-serif; color: white;">Administrador</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            data-bs-target="#views3">
+            <span>
+              <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z">
+                  </path>
+                </svg>
+              </span>
+              <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Comunicación</span>
+            </span>
+            <span class="link-arrow">
+              <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </span>
+          <div class="multi-level collapse " role="list" id="views3" aria-expanded="false">
+            <ul class="flex-column nav">
+              <li class="nav-item">
+                <a class="nav-link" href="comunicacion_usuario.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Usuario</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comunicacion_docente.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Docente</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            data-bs-target="#views4">
+            <span>
+              <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm2 10a1 1 0 10-2 0v3a1 1 0 102 0v-3zm2-3a1 1 0 011 1v5a1 1 0 11-2 0v-5a1 1 0 011-1zm4-1a1 1 0 10-2 0v6a1 1 0 102 0V8z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Reportes</span>
+            </span>
+            <span class="link-arrow">
+              <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </span>
+          <div class="multi-level collapse " role="list" id="views4" aria-expanded="false">
+            <ul class="flex-column nav">
+              <li class="nav-item">
+                <a class="nav-link" href="reportes_usuario.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Usuario</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reportes_docente.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Docente</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            data-bs-target="#views5">
+            <span>
+              <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+                  </path>
+                </svg>
+              </span>
+              <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Docentes</span>
+            </span>
+            <span class="link-arrow">
+              <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </span>
+          <div class="multi-level collapse " role="list" id="views5" aria-expanded="false">
+            <ul class="flex-column nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="docentes_usuario.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Usuario</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="docentes_administrador.html">
+                  <span class="sidebar-text"
+                    style="font-family: 'Inter', sans-serif; color: white;">Administrador</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            data-bs-target="#views6">
+            <span>
+              <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Actividades</span>
+            </span>
+            <span class="link-arrow">
+              <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </span>
+          <div class="multi-level collapse " role="list" id="views6" aria-expanded="false">
+            <ul class="flex-column nav">
+              <li class="nav-item">
+                <a class="nav-link" href="actividades_usuario.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Usuario</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="actividades_docente.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Docente</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="content">
+    <nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark ps-0 pe-2 pb-0">
+      <div class="container-fluid px-0">
+        <div class="d-flex justify-content-between w-100" id="navbarSupportedContent">
+          <div class="d-flex align-items-center">
+
+          </div>
+          <!-- Navbar links -->
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item dropdown ms-lg-3">
+              <a class="nav-link dropdown-toggle pt-1 px-0" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <div class="media d-flex align-items-center">
+                  <img class="avatar rounded-circle" alt="Image placeholder"
+                    src="../assets/img/team/profile-picture-3.jpg">
+                  <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
+                    <span class="mb-0 font-small text-gray-900"
+                      style="font-family: 'Roboto', sans-serif; font-weight: bold;">Juan Pérez</span>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1">
+                <a class="dropdown-item d-flex align-items-center" href="perfil.html"
+                  style="font-family: 'Roboto', sans-serif;">
+                  <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  Mi Perfil
+                </a>
+
+                <a class="dropdown-item d-flex align-items-center" href="administrador.html"
+                  style="font-family: 'Roboto', sans-serif;">
+                  <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v7h-2l-1 2H8l-1-2H5V5z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  Admin
+                </a>
+
+                <div role="separator" class="dropdown-divider my-1"></div>
+                <a class="dropdown-item d-flex align-items-center" href="inicio_sesion.html"
+                  style="font-family: 'Roboto', sans-serif;">
+                  <svg class="dropdown-icon text-danger me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+                    </path>
+                  </svg>
+                  Cerrar Sesión
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="row">
+      <div class="col-12">
+        <div class="card border-0 shadow">
+          <div class="card-header">
+            <h3 class="fs-5 mb-0" style="font-family: 'Poppins', sans-serif; font-weight: bold;">Docentes de la Institución</h3>
+          </div>
+          <div class="card-body">
+
+            <div id="filtros" style="font-family: 'Roboto', sans-serif;">
+              <select id="filtroMateria">
+                <option value="">Todas las materias</option>
+                <option value="Matemáticas">Matemáticas</option>
+                <option value="Lengua">Lengua</option>
+                <option value="Inglés">Inglés</option>
+              </select>
+              <button class="btn btn-primary" style="font-family: 'Inter', sans-serif;" onclick="filtrarDocentes()">Confirmar</button>
+            </div>
+
+            <div id="listaDocentes"></div>
+
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <div id="detalleDocente"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Soporte Técnico -->
+    <div class="theme-settings card bg-gray-800 pt-2 collapse" id="theme-settings">
+      <div class="card-body bg-gray-800 text-white pt-4">
+        <button type="button" class="btn-close theme-settings-close" aria-label="Close" data-bs-toggle="collapse"
+          href="#theme-settings" role="button" aria-expanded="false" aria-controls="theme-settings"></button>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <p class="m-0 mb-1 me-4 fs-7" style="font-family: 'Inter', sans-serif; color: white;">Soporte Técnico</p>
+        </div>
+        <a href="Soporte.html"
+          class="btn btn-secondary d-inline-flex align-items-center justify-content-center mb-3 w-100" style="background-color: #8ABD3C; border-color: #8ABD3C; font-family: 'Inter', sans-serif; color: white;">
+          Contactar Soporte
+          <svg class="icon icon-xs ms-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M2 9.5A3.5 3.5 0 005.5 13H9v2.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 15.586V13h2.5a4.5 4.5 0 10-.616-8.958 4.002 4.002 0 10-7.753 1.977A3.5 3.5 0 002 9.5zm9 3.5H9V8a1 1 0 012 0v5z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="card theme-settings bg-gray-800 theme-settings-expand" id="theme-settings-expand">
+      <div class="card-body bg-gray-800 text-white rounded-top p-3 py-2">
+        <span class="fw-bold d-inline-flex align-items-center h6" style="font-family: 'Inter', sans-serif;">
+          Soporte Técnico
+        </span>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-white rounded shadow p-3 mt-4 mb-5">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 mb-2 mb-md-0">
+          <p class="mb-0 text-center text-md-start small" style="font-family: 'Roboto', sans-serif; ">© 2025 <a
+              class="text-primary fw-bold" href="#" target="_blank"
+              style="font-family: 'Roboto', sans-serif;">Skolaris</a> - Derechos Reservados</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <ul class="list-inline list-group-flush list-group-borderless mb-0 text-center text-md-end">
+            <li class="list-inline-item px-2">
+              <a href="tel:+50600000000" class="text-decoration-none small"
+                style="font-family: 'Roboto', sans-serif;">Llamar: +506 0000-0000</a>
+            </li>
+            <li class="list-inline-item px-2">
+              <a href="mailto:info@escuela.com" class="text-decoration-none small"
+                style="font-family: 'Roboto', sans-serif;">Correo: info@escuela.com</a>
+            </li>
+            <li class="list-inline-item px-2">
+              <a href="https://facebook.com/escuela" target="_blank" class="text-decoration-none small"
+                style="font-family: 'Roboto', sans-serif;">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+  let docentes = [];
+
+  // Cargar docentes desde la API
+  async function cargarDocentes() {
+    try {
+      const resp = await fetch("http://localhost:8000/api/usuarios?rol=Docente", {
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer " + localStorage.getItem("token")
+        }
+      });
+
+      if (!resp.ok) throw new Error("Error al cargar docentes");
+
+      docentes = await resp.json(); // Guardamos los docentes en la variable global
+      mostrarDocentes();
+    } catch (error) {
+      console.error("Error obteniendo docentes:", error);
+      alert("No se pudieron cargar los docentes.");
+    }
+  }
+
+  function mostrarDocentes(lista = docentes) {
+    const contenedor = document.getElementById("listaDocentes");
+    contenedor.innerHTML = "";
+
+    lista.forEach((docente, index) => {
+      const card = document.createElement("div");
+      card.className = "docente";
+      card.innerHTML = `
+        <strong>${docente.nombre} ${docente.apellido}</strong><br style="font-family: 'Roboto', sans-serif;">
+        ${docente.email} - ${docente.materia || "Sin materia asignada"}<br>
+        <button class="btn mt-2" style="background-color: #8ABD3C; border-color: #8ABD3C; font-family: 'Inter', sans-serif; color: white;" onclick="verMas(${index})">Ver más</button>
+      `;
+      contenedor.appendChild(card);
+    });
+  }
+
+  function filtrarDocentes() {
+    const materiaSeleccionada = document.getElementById("filtroMateria").value;
+    if (materiaSeleccionada === "") {
+      mostrarDocentes();
+    } else {
+      const filtrados = docentes.filter(d => d.materia === materiaSeleccionada);
+      mostrarDocentes(filtrados);
+    }
+  }
+
+  function verMas(index) {
+    const docente = docentes[index];
+    const detalle = `
+      <h2 style="font-family: 'Inter', sans-serif;">Información del Docente</h2>
+      <p style="font-family: 'Roboto', sans-serif;"><strong>Nombre:</strong> ${docente.nombre} ${docente.apellido}</p>
+      <p style="font-family: 'Roboto', sans-serif;"><strong>Correo:</strong> ${docente.email}</p>
+      <p style="font-family: 'Roboto', sans-serif;"><strong>Celular:</strong> ${docente.telefono || "No registrado"}</p>
+      <p style="font-family: 'Roboto', sans-serif;"><strong>Materia:</strong> ${docente.materia || "No asignada"}</p>
+      <p style="font-family: 'Roboto', sans-serif;"><strong>Ingreso:</strong> ${docente.fechaIngreso ? docente.fechaIngreso.split("T")[0] : "No disponible"}</p>
+    `;
+    document.getElementById("detalleDocente").innerHTML = detalle;
+    document.getElementById("modal").style.display = "block";
+  }
+
+  function cerrarModal() {
+    document.getElementById("modal").style.display = "none";
+  }
+
+  // Cuando cargue la página, pedimos los docentes al backend
+  document.addEventListener("DOMContentLoaded", cargarDocentes);
+</script>
+
+
+  <!-- Core -->
+  <script src="../vendor/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- Vendor JS -->
+  <script src="../vendor/onscreen/dist/on-screen.umd.min.js"></script>
+
+  <!-- Slider -->
+  <script src="../vendor/vendor/nouislider/distribute/nouislider.min.js"></script>
+
+  <!-- Smooth scroll -->
+  <script src="../vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+  <!-- Charts -->
+  <script src="../vendor/chartist/dist/chartist.min.js"></script>
+  <script src="../vendor/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+
+  <!-- Datepicker -->
+  <script src="../vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+
+  <!-- Sweet Alerts 2 -->
+  <script src="../vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+  <!-- Moment JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+
+  <!-- Vanilla JS Datepicker -->
+  <script src="../vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+
+  <!-- Notyf -->
+  <script src="../vendor/notyf/notyf.min.js"></script>
+
+  <!-- Simplebar -->
+  <script src="../vendor/simplebar/dist/simplebar.min.js"></script>
+
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <!-- Volt JS -->
+  <script src="../assets/js/volt.js"></script>
+
+
+  <script src="../assets/js/validarAcceso.js" defer></script>
+  <script src="../assets/js/cargarUsuarioNavbar.js"></script>
+</body>
+
+</html>
+
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  #filtros {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #filtroMateria {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+  }
+
+  .docente {
+    background: linear-gradient(to right, #ffffff, #f8f9fa);
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+
+  .docente:hover {
+    transform: translateY(-2px);
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-content {
+    background: #fff;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 14px;
+    width: 70%;
+    max-width: 600px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 26px;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .modal-content p {
+    margin: 6px 0;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

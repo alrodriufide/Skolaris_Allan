@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- Primary Meta Tags -->
+  <title>Skolaris</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="title" content="Skolaris">
+  <meta name="author" content="Skolaris">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Sweet Alert -->
+  <link type="text/css" href="../vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+
+  <!-- Notyf -->
+  <link type="text/css" href="../vendor/notyf/notyf.min.css" rel="stylesheet">
+
+  <!-- Volt CSS -->
+  <link type="text/css" href="../css/volt.css" rel="stylesheet">
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;">
+
+    <main>
+        <!-- Section -->
+        <section class="vh-lg-100 mt-5 mt-lg-0 bg-soft d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center form-bg-image">
+                    <p class="text-center"><a href="inicio_sesion.html" class="d-flex align-items-center justify-content-center" 
+                       style="font-family: 'Inter', sans-serif; color: #000000; font-weight: 600; text-decoration: none; padding: 6px 12px; border-radius: 4px; background-color: #f5f5f5; transition: all 0.2s;">
+                        <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+                        Volver al Inicio de Sesión
+                        </a>
+                    </p>
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="signin-inner my-3 my-lg-0 bg-white shadow border-0 rounded p-4 p-lg-5 w-100 fmxw-500">
+                            <!-- Logo añadido aquí -->
+                            <div class="text-center mb-4">
+                                <img src="../assets/img/brand/EscuelaLogo.png" alt="Skolaris Logo" style="max-height: 80px; width: auto;">
+                            </div>
+                            
+                            <h1 class="h3" style="font-family: 'Poppins', sans-serif; color: #2E384D; text-align: center;">¿Olvidaste la contraseña?</h1>
+                            <p class="mb-4" style="font-family: 'Roboto', sans-serif; text-align: center;">No te preocupes, escribe tu correo para recibir el proceso para reestablecerla</p>
+                            <form id="resetForm">
+                                <!-- Form -->
+                                <div class="mb-4">
+                                    <label for="email" style="font-family: 'Inter', sans-serif;">Correo Electrónico</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                                        </span>
+                                        <input type="email" class="form-control" id="resetEmail" placeholder="john@company.com" required autofocus style="font-family: 'Roboto', sans-serif;">
+                                    </div>  
+                                </div>
+                                <!-- End of Form -->
+                                <div class="d-grid">
+                                    <button type="submit" class="btn" style="background-color: #2E384D; color: white; font-family: 'Inter', sans-serif;">Reestablecer</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Core -->
+    <script src="../vendor/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Sweet Alerts 2 -->
+    <script src="../vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+    <script>
+        // Manejo del formulario de restablecimiento
+        document.getElementById('resetForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('resetEmail').value;
+            
+            // Simular envío de correo
+            Swal.fire({
+                icon: 'success',
+                title: 'Correo enviado',
+                title: 'Correo enviado',
+                titleStyle: "font-family: 'Poppins', sans-serif; color: #2E384D;",
+                html: `Se han enviado los pasos para restablecer la contraseña al correo <strong>${email}</strong>`,
+                htmlStyle: "font-family: 'Roboto', sans-serif;",
+                confirmButtonText: 'OK',
+                confirmButtonColor: '#2E384D',
+                customClass: {
+                    confirmButton: 'swal-confirm-button'
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Redirigir al inicio de sesión
+                    window.location.href = 'inicio_sesion.html';
+                }
+            });
+        });
+    </script>
+    <style>
+        .swal-confirm-button {
+            font-family: 'Inter', sans-serif !important;
+        }
+    </style>
+</body>
+</html>

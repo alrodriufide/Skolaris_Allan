@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- Primary Meta Tags -->
+  <title>Skolaris</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="title" content="Skolaris">
+  <meta name="author" content="Skolaris">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Sweet Alert -->
+  <link type="text/css" href="../vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+  <!-- Notyf -->
+  <link type="text/css" href="../vendor/notyf/notyf.min.css" rel="stylesheet">
+  <!-- Volt CSS -->
+  <link type="text/css" href="../css/volt.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
+    <a class="navbar-brand me-lg-5" href="pagina_principal.html">
+      <img class="navbar-brand-dark" src="../assets/img/brand/EscuelaLogo.png" alt="Logo" width="40" height="auto" />
+    </a>
+    <div class="d-flex align-items-center">
+      <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-800 text-white collapse" data-simplebar>
+    <div class="sidebar-inner px-4 pt-3">
+      <div class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
+        <div class="d-flex align-items-center">
+          <div class="avatar-lg me-4">
+            <img src="../assets/img/team/profile-picture-3.jpg" class="card-img-top rounded-circle border-white"
+              alt="Bonnie Green">
+          </div>
+          <div class="d-block">
+            <h2 class="h5 mb-3">Hi, Jane</h2>
+            <a href="examples/sign-in.html" class="btn btn-secondary btn-sm d-inline-flex align-items-center">
+              <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+              </svg>
+              Sign Out
+            </a>
+          </div>
+        </div>
+        <div class="collapse-close d-md-none">
+          <a href="#sidebarMenu" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu"
+            aria-expanded="true" aria-label="Toggle navigation">
+            <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <ul class="nav flex-column pt-3 pt-md-0">
+        <li class="nav-item">
+          <a href="../pagina_principal.html" class="nav-link d-flex align-items-center">
+            <span class="sidebar-icon">
+              <img src="../assets/img/brand/EscuelaLogo.png" height="35" width="auto" alt="Logo">
+            </span>
+            <span class="mt-1 ms-1 sidebar-text"
+              style="font-family: 'Inter', sans-serif; color: white; font-size: 18px;">Skolaris</span>
+          </a>
+        </li>
+        <li class="nav-item   ">
+          <a href="../pagina_principal.html" class="nav-link">
+            <span class="sidebar-icon">
+              <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+              </svg>
+            </span>
+            <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Inicio</span>
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a href="ver_normativa.html" class="nav-link">
+            <span class="sidebar-icon">
+              <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+            <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Ver Normativa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            data-bs-target="#views">
+            <span>
+              <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z" />
+                </svg>
+              </span>
+              <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Asistencia</span>
+            </span>
+            <span class="link-arrow">
+              <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </span>
+          <div class="multi-level collapse " role="list" id="views" aria-expanded="false">
+            <ul class="flex-column nav">
+              <li class="nav-item">
+                <a class="nav-link" href="asistencia_usuario.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Usuario</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="asistencia_docente.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Docente</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            data-bs-target="#views1">
+            <span>
+              <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+              </span>
+              <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Calificaciones</span>
+            </span>
+            <span class="link-arrow">
+              <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </span>
+          <div class="multi-level collapse " role="list" id="views1" aria-expanded="false">
+            <ul class="flex-column nav">
+              <li class="nav-item">
+                <a class="nav-link" href="calificaciones_usuario.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Usuario</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calificaciones_docente.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Docente</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            data-bs-target="#views2">
+            <span>
+              <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Horarios</span>
+            </span>
+            <span class="link-arrow">
+              <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </span>
+          <div class="multi-level collapse " role="list" id="views2" aria-expanded="false">
+            <ul class="flex-column nav">
+              <li class="nav-item">
+                <a class="nav-link" href="horarios_usuario.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Usuario</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="horarios_docente.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Docente</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="horarios_administrador.html">
+                  <span class="sidebar-text"
+                    style="font-family: 'Inter', sans-serif; color: white;">Administrador</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            data-bs-target="#views3">
+            <span>
+              <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z">
+                  </path>
+                </svg>
+              </span>
+              <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Comunicación</span>
+            </span>
+            <span class="link-arrow">
+              <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </span>
+          <div class="multi-level collapse " role="list" id="views3" aria-expanded="false">
+            <ul class="flex-column nav">
+              <li class="nav-item">
+                <a class="nav-link" href="comunicacion_usuario.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Usuario</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comunicacion_docente.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Docente</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            data-bs-target="#views4">
+            <span>
+              <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm2 10a1 1 0 10-2 0v3a1 1 0 102 0v-3zm2-3a1 1 0 011 1v5a1 1 0 11-2 0v-5a1 1 0 011-1zm4-1a1 1 0 10-2 0v6a1 1 0 102 0V8z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Reportes</span>
+            </span>
+            <span class="link-arrow">
+              <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </span>
+          <div class="multi-level collapse " role="list" id="views4" aria-expanded="false">
+            <ul class="flex-column nav">
+              <li class="nav-item">
+                <a class="nav-link" href="reportes_usuario.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Usuario</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reportes_docente.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Docente</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            data-bs-target="#views5">
+            <span>
+              <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+                  </path>
+                </svg>
+              </span>
+              <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Docentes</span>
+            </span>
+            <span class="link-arrow">
+              <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </span>
+          <div class="multi-level collapse " role="list" id="views5" aria-expanded="false">
+            <ul class="flex-column nav">
+              <li class="nav-item">
+                <a class="nav-link" href="docentes_usuario.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Usuario</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="docentes_administrador.html">
+                  <span class="sidebar-text"
+                    style="font-family: 'Inter', sans-serif; color: white;">Administrador</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+            data-bs-target="#views6">
+            <span>
+              <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </span>
+              <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Actividades</span>
+            </span>
+            <span class="link-arrow">
+              <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </span>
+          <div class="multi-level collapse " role="list" id="views6" aria-expanded="false">
+            <ul class="flex-column nav">
+              <li class="nav-item">
+                <a class="nav-link" href="actividades_usuario.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Usuario</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="actividades_docente.html">
+                  <span class="sidebar-text" style="font-family: 'Inter', sans-serif; color: white;">Docente</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="content">
+    <nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark ps-0 pe-2 pb-0">
+      <div class="container-fluid px-0">
+        <div class="d-flex justify-content-between w-100" id="navbarSupportedContent">
+          <div class="d-flex align-items-center">
+
+          </div>
+          <!-- Navbar links -->
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item dropdown ms-lg-3">
+              <a class="nav-link dropdown-toggle pt-1 px-0" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <div class="media d-flex align-items-center">
+                  <img class="avatar rounded-circle" alt="Image placeholder"
+                    src="../assets/img/team/profile-picture-3.jpg">
+                  <div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
+                    <span class="mb-0 font-small text-gray-900"
+                      style="font-family: 'Roboto', sans-serif; font-weight: bold;">Juan Pérez</span>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1">
+                <a class="dropdown-item d-flex align-items-center" href="perfil.html"
+                  style="font-family: 'Roboto', sans-serif;">
+                  <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  Mi Perfil
+                </a>
+
+                <a class="dropdown-item d-flex align-items-center" href="administrador.html"
+                  style="font-family: 'Roboto', sans-serif;">
+                  <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v7h-2l-1 2H8l-1-2H5V5z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  Admin
+                </a>
+
+                <div role="separator" class="dropdown-divider my-1"></div>
+                <a class="dropdown-item d-flex align-items-center" href="inicio_sesion.html"
+                  style="font-family: 'Roboto', sans-serif;">
+                  <svg class="dropdown-icon text-danger me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+                    </path>
+                  </svg>
+                  Cerrar Sesión
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="row">
+      <div class="col-12">
+        <div class="card border-0 shadow">
+          <div class="card-header">
+            <div class="row align-items-center">
+              <div class="col">
+                <h3 class="fs-5 mb-0" style="font-family: 'Poppins', sans-serif; font-weight: bold;">Gestión de Usuarios
+                </h3>
+              </div>
+              <div class="col text-end">
+                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#crearUsuarioModal">
+                  <svg class="icon icon-xs me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                  </svg>
+                  Crear Usuario
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table align-items-center table-flush text-center">
+              <thead class="thead-light">
+                <tr>
+                  <th class="border-bottom" scope="col">Cédula</th>
+                  <th class="border-bottom" scope="col">Nombre</th>
+                  <th class="border-bottom" scope="col">Apellido</th>
+                  <th class="border-bottom" scope="col">Correo Electrónico</th>
+                  <th class="border-bottom" scope="col">Roles</th>
+                  <th class="border-bottom" scope="col">Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Usuario 1 -->
+                <tr>
+                  <td class="text-gray-900">1-2345-6789</td>
+                  <td class="fw-bold">Juan</td>
+                  <td class="fw-bold">Pérez</td>
+                  <td class="fw-bold">juan.perez@example.com</td>
+                  <td>
+                    <span class="badge bg-primary">Administrador</span>
+                  </td>
+                  <td>
+                    <button class="btn btn-sm btn-primary me-2" data-bs-toggle="modal"
+                      data-bs-target="#gestionRolesModal">
+                      Gestionar Roles
+                    </button>
+                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuarioModal">
+                      Desactivar
+                    </button>
+                  </td>
+                </tr>
+                <!-- Usuario 2 -->
+                <tr>
+                  <td class="text-gray-900">2-3456-7890</td>
+                  <td class="fw-bold">María</td>
+                  <td class="fw-bold">González</td>
+                  <td class="fw-bold">maria.gonzalez@example.com</td>
+                  <td>
+                    <span class="badge"
+                      style="background-color: #EC5832; border-color: #EC5832; font-family: 'Inter', sans-serif; color: white;">Docente</span>
+                  </td>
+                  <td>
+                    <button class="btn btn-sm btn-primary me-2" data-bs-toggle="modal"
+                      data-bs-target="#gestionRolesModal">
+                      Gestionar Roles
+                    </button>
+                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuarioModal">
+                      Eliminar
+                    </button>
+                  </td>
+                </tr>
+                <!-- Usuario 3 -->
+                <tr>
+                  <td class="text-gray-900">3-4567-8901</td>
+                  <td class="fw-bold">Carlos</td>
+                  <td class="fw-bold">Rodríguez</td>
+                  <td class="fw-bold">carlos.rodriguez@example.com</td>
+                  <td>
+                    <span class="badge"
+                      style="background-color: #8ABD3C; border-color: #8ABD3C; font-family: 'Inter', sans-serif; color: white;">Estudiante</span>
+                  </td>
+                  <td>
+                    <button class="btn btn-sm btn-primary me-2" data-bs-toggle="modal"
+                      data-bs-target="#gestionRolesModal">
+                      Gestionar Roles
+                    </button>
+                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuarioModal">
+                      Eliminar
+                    </button>
+                  </td>
+                </tr>
+                <!-- Usuario 4 -->
+                <tr>
+                  <td class="text-gray-900">4-5678-9012</td>
+                  <td class="fw-bold">Ana</td>
+                  <td class="fw-bold">Martínez</td>
+                  <td class="fw-bold">ana.martinez@example.com</td>
+                  <td>
+                    <span class="badge"
+                      style="background-color: #EC5832; border-color: #EC5832; font-family: 'Inter', sans-serif; color: white;">Docente</span>
+                    <span class="badge bg-secondary">Tutor</span>
+                  </td>
+                  <td>
+                    <button class="btn btn-sm btn-primary me-2" data-bs-toggle="modal"
+                      data-bs-target="#gestionRolesModal">
+                      Gestionar Roles
+                    </button>
+                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuarioModal">
+                      Eliminar
+                    </button>
+                  </td>
+                </tr>
+                <!-- Usuario 5 -->
+                <tr>
+                  <td class="text-gray-900">5-6789-0123</td>
+                  <td class="fw-bold">Luis</td>
+                  <td class="fw-bold">Hernández</td>
+                  <td class="fw-bold">luis.hernandez@example.com</td>
+                  <td>
+                    <span class="badge"
+                      style="background-color: #8ABD3C; border-color: #8ABD3C; font-family: 'Inter', sans-serif; color: white;">Estudiante</span>
+                  </td>
+                  <td>
+                    <button class="btn btn-sm btn-primary me-2" data-bs-toggle="modal"
+                      data-bs-target="#gestionRolesModal">
+                      Gestionar Roles
+                    </button>
+                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarUsuarioModal">
+                      Eliminar
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Crear Usuario -->
+    <div class="modal fade" id="crearUsuarioModal" tabindex="-1" role="dialog" aria-labelledby="crearUsuarioModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="crearUsuarioModalLabel"
+              style="font-family: 'Inter', sans-serif; font-weight: bold;">Crear Nuevo Usuario</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="font-family: 'Roboto', sans-serif;">
+            <form id="formCrearUsuario">
+              <div class="form-group mb-3">
+                <label for="cedula" style="font-weight: bold;">Cédula</label>
+                <input type="text" class="form-control" id="cedula" placeholder="Ingrese la cédula">
+              </div>
+              <div class="form-group mb-3">
+                <label for="nombre" style="font-weight: bold;">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre">
+              </div>
+              <div class="form-group mb-3">
+                <label for="apellido" style="font-weight: bold;">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Ingrese el apellido">
+              </div>
+              <div class="form-group mb-3">
+                <label for="email" style="font-weight: bold;">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese el correo electrónico">
+              </div>
+              <div class="form-group mb-3">
+                <label style="font-weight: bold;">Roles</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Admin" id="rolAdmin" name="rol">
+                  <label class="form-check-label" for="rolAdmin">Administrador</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Docente" id="rolDocente" name="rol">
+                  <label class="form-check-label" for="rolDocente">Docente</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Estudiante" id="rolEstudiante" name="rol">
+                  <label class="form-check-label" for="rolEstudiante">Estudiante</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Tutor" id="rolTutor" name="rol">
+                  <label class="form-check-label" for="rolTutor">Tutor</label>
+                </div>
+
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn"
+              style="background-color: #8ABD3C; border-color: #8ABD3C; font-family: 'Inter', sans-serif; color: white;"
+              id="btnConfirmarCrear">Confirmar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Gestionar Roles -->
+    <div class="modal fade" id="gestionRolesModal" tabindex="-1" role="dialog" aria-labelledby="gestionRolesModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="gestionRolesModalLabel"
+              style="font-family: 'Inter', sans-serif; font-weight: bold;">Gestionar Roles de Usuario</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="font-family: 'Roboto', sans-serif;">
+            <form id="formGestionRoles">
+              <div class="mb-3">
+                <!-- Nombre del usuario dinámico -->
+                <label class="form-label" style="font-weight: bold;">Usuario: <strong
+                    id="rolesUsuarioNombre"></strong></label>
+              </div>
+              <div class="form-group mb-3">
+                <label style="font-weight: bold;">Roles Actuales</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Admin" id="editRolAdmin">
+                  <label class="form-check-label" for="editRolAdmin">Administrador</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Docente" id="editRolDocente">
+                  <label class="form-check-label" for="editRolDocente">Docente</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Estudiante" id="editRolEstudiante">
+                  <label class="form-check-label" for="editRolEstudiante">Estudiante</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Tutor" id="editRolTutor">
+                  <label class="form-check-label" for="editRolTutor">Tutor</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Descartar</button>
+            <button type="button" class="btn"
+              style="background-color: #8ABD3C; border-color: #8ABD3C; font-family: 'Inter', sans-serif; color: white;"
+              id="btnConfirmarRoles">Confirmar Cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal Eliminar Usuario -->
+    <div class="modal fade" id="eliminarUsuarioModal" tabindex="-1" role="dialog"
+      aria-labelledby="eliminarUsuarioModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="eliminarUsuarioModalLabel"
+              style="font-family: 'Inter', sans-serif; font-weight: bold;">Desactivar Usuario</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="font-family: 'Roboto', sans-serif;">
+            <p>¿Estás seguro que deseas desactivar al usuario <strong id="usuarioEliminarNombre">
+            </strong>?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-danger" id="btnConfirmarEliminar">Confirmar Desactivación</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--NUEVO Modal Activar Usuario -->
+    <div class="modal fade" id="activarUsuarioModal" tabindex="-1" role="dialog"
+      aria-labelledby="activarUsuarioModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="activarUsuarioModalLabel"
+              style="font-family: 'Inter', sans-serif; font-weight: bold;">Activar Usuario</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="font-family: 'Roboto', sans-serif;">
+            <p>¿Estás seguro que deseas reactivar al usuario <strong id="usuarioActivarNombre"></strong>?</p>
+            <p class="text-success">El usuario podrá volver a iniciar sesión.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-success text-white" id="btnConfirmarActivar">Confirmar Activación</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Soporte Técnico -->
+    <div class="theme-settings card bg-gray-800 pt-2 collapse" id="theme-settings">
+      <div class="card-body bg-gray-800 text-white pt-4">
+        <button type="button" class="btn-close theme-settings-close" aria-label="Close" data-bs-toggle="collapse"
+          href="#theme-settings" role="button" aria-expanded="false" aria-controls="theme-settings"></button>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <p class="m-0 mb-1 me-4 fs-7" style="font-family: 'Inter', sans-serif; color: white;">Soporte Técnico</p>
+        </div>
+        <a href="Soporte.html"
+          class="btn btn-secondary d-inline-flex align-items-center justify-content-center mb-3 w-100"
+          style="background-color: #8ABD3C; border-color: #8ABD3C; font-family: 'Inter', sans-serif; color: white;">
+          Contactar Soporte
+          <svg class="icon icon-xs ms-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M2 9.5A3.5 3.5 0 005.5 13H9v2.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 15.586V13h2.5a4.5 4.5 0 10-.616-8.958 4.002 4.002 0 10-7.753 1.977A3.5 3.5 0 002 9.5zm9 3.5H9V8a1 1 0 012 0v5z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="card theme-settings bg-gray-800 theme-settings-expand" id="theme-settings-expand">
+      <div class="card-body bg-gray-800 text-white rounded-top p-3 py-2">
+        <span class="fw-bold d-inline-flex align-items-center h6" style="font-family: 'Inter', sans-serif;">
+          Soporte Técnico
+        </span>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-white rounded shadow p-3 mt-4 mb-5">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 mb-2 mb-md-0">
+          <p class="mb-0 text-center text-md-start small" style="font-family: 'Roboto', sans-serif; ">© 2025 <a
+              class="text-primary fw-bold" href="#" target="_blank"
+              style="font-family: 'Roboto', sans-serif;">Skolaris</a> - Derechos Reservados</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <ul class="list-inline list-group-flush list-group-borderless mb-0 text-center text-md-end">
+            <li class="list-inline-item px-2">
+              <a href="tel:+50600000000" class="text-decoration-none small"
+                style="font-family: 'Roboto', sans-serif;">Llamar: +506 0000-0000</a>
+            </li>
+            <li class="list-inline-item px-2">
+              <a href="mailto:info@escuela.com" class="text-decoration-none small"
+                style="font-family: 'Roboto', sans-serif;">Correo: info@escuela.com</a>
+            </li>
+            <li class="list-inline-item px-2">
+              <a href="https://facebook.com/escuela" target="_blank" class="text-decoration-none small"
+                style="font-family: 'Roboto', sans-serif;">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Core -->
+  <script src="../vendor/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- Vendor JS -->
+  <script src="../vendor/onscreen/dist/on-screen.umd.min.js"></script>
+
+  <!-- Slider -->
+  <script src="../vendor/nouislider/dist/nouislider.min.js"></script>
+
+  <!-- Smooth scroll -->
+  <script src="../vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+  <!-- Charts -->
+  <script src="../vendor/chartist/dist/chartist.min.js"></script>
+  <script src="../vendor/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+
+  <!-- Datepicker -->
+  <script src="../vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+
+  <!-- Sweet Alerts 2 -->
+  <script src="../vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+  <!-- Moment JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+
+  <!-- Vanilla JS Datepicker -->
+  <script src="../vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+
+  <!-- Notyf -->
+  <script src="../vendor/notyf/notyf.min.js"></script>
+
+  <!-- Simplebar -->
+  <script src="../vendor/simplebar/dist/simplebar.min.js"></script>
+
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <!-- Volt JS -->
+  <script src="../assets/js/volt.js"></script>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  let usuarios = [];
+  let usuarioActual = null;
+
+  // ===== CREAR USUARIO =====
+  document.getElementById('btnConfirmarCrear').addEventListener('click', async function () {
+    const crearUsuarioModal = bootstrap.Modal.getOrCreateInstance(document.getElementById('crearUsuarioModal'));
+
+    const cedula = document.getElementById('cedula').value.trim();
+    const nombre = document.getElementById('nombre').value.trim();
+    const apellido = document.getElementById('apellido').value.trim();
+    const correo = document.getElementById('email').value.trim();
+    const contrasena = document.getElementById('contrasena')?.value || '123456';
+    
+    // Solo enviamos un rol como string
+    const rol = document.querySelector('input[name="rol"]:checked')?.value;
+
+    if (!cedula || !nombre || !apellido || !correo || !rol) {
+      Swal.fire({
+        title: 'Error',
+        text: 'Todos los campos y un rol son obligatorios',
+        icon: 'error',
+        confirmButtonText: 'Aceptar'
+      });
+      return;
+    }
+
+    try {
+      const resp = await fetch("http://localhost:8000/api/usuarios", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer " + localStorage.getItem("token")
+        },
+        body: JSON.stringify({ cedula, nombre, apellido, email: correo, contrasena, rol })
+      });
+
+      const data = await resp.json();
+      if (!resp.ok) throw new Error(data.error || "Error al crear usuario");
+
+      crearUsuarioModal.hide();
+      document.getElementById('formCrearUsuario').reset();
+
+      Swal.fire({
+        title: 'Usuario creado',
+        text: 'El usuario ha sido creado exitosamente.',
+        icon: 'success',
+        confirmButtonText: 'Aceptar'
+      }).then(() => cargarUsuariosAPI());
+
+    } catch (err) {
+      console.error("Error creando usuario:", err);
+      Swal.fire({
+        title: 'Error',
+        text: err.message,
+        icon: 'error',
+        confirmButtonText: 'Aceptar'
+      });
+    }
+  });
+
+  // ===== ACTUALIZAR ROLES (solo Admin) =====
+  document.getElementById('btnConfirmarRoles').addEventListener('click', async function () {
+    console.log("==== Iniciando actualización de roles ====");
+
+    const gestionRolesModal = bootstrap.Modal.getOrCreateInstance(document.getElementById('gestionRolesModal'));
+    console.log("Modal obtenido:", gestionRolesModal);
+
+    // Recoger los roles seleccionados
+    const rolesSeleccionados = [];
+    if (document.getElementById('editRolAdmin').checked) rolesSeleccionados.push('Admin');
+    if (document.getElementById('editRolDocente').checked) rolesSeleccionados.push('Docente');
+    if (document.getElementById('editRolEstudiante').checked) rolesSeleccionados.push('Estudiante');
+    if (document.getElementById('editRolTutor').checked) rolesSeleccionados.push('Tutor');
+
+    console.log("Roles seleccionados:", rolesSeleccionados);
+
+    if (rolesSeleccionados.length === 0) {
+      console.warn("No se seleccionó ningún rol");
+      Swal.fire({
+        title: 'Error',
+        text: 'Debes seleccionar al menos un rol',
+        icon: 'error',
+        confirmButtonText: 'Aceptar'
+      });
+      return;
+    }
+
+    // 🔍 Log completo de usuarioActual para depuración
+    console.log("DEBUG: usuarioActual antes de validar _id:", usuarioActual);
+
+    // Validar usuario a actualizar
+    if (!usuarioActual || !usuarioActual.id) {
+      console.error("No se pudo determinar el usuario a actualizar");
+      Swal.fire({
+        title: 'Error',
+        text: 'No se pudo determinar el usuario a actualizar',
+        icon: 'error',
+        confirmButtonText: 'Aceptar'
+      });
+      return;
+    }
+
+    // Evitar que el Admin se cambie a sí mismo si no quieres permitirlo
+    const adminId = JSON.parse(atob(localStorage.getItem('token').split('.')[1])).id;
+    console.log("DEBUG: ID del Admin logueado:", adminId);
+
+    if (usuarioActual._id === adminId) {
+      Swal.fire({
+        title: 'Atención',
+        text: 'No puedes cambiar los roles de tu propio usuario',
+        icon: 'warning',
+        confirmButtonText: 'Aceptar'
+      });
+      return;
+    }
+
+    try {
+      const token = localStorage.getItem("token");
+      console.log("Token obtenido:", token);
+      if (!token) throw new Error("No se encontró token. Debes iniciar sesión como Admin.");
+
+      console.log("Enviando solicitud PUT a backend para usuario:", usuarioActual.id);
+
+      const resp = await fetch(`http://localhost:8000/api/usuarios/${usuarioActual.id}/rol`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer " + token
+        },
+        body: JSON.stringify({ rol: rolesSeleccionados })
+      });
+
+      console.log("Respuesta del fetch:", resp);
+
+      const data = await resp.json();
+      console.log("Datos recibidos del backend:", data);
+
+      if (!resp.ok) throw new Error(data.message || "Error al actualizar roles");
+
+      console.log("Roles actualizados correctamente");
+      gestionRolesModal.hide();
+      Swal.fire({
+        title: 'Roles actualizados',
+        text: 'Los roles del usuario han sido actualizados correctamente.',
+        icon: 'success',
+        confirmButtonText: 'Aceptar'
+      }).then(() => {
+        if (typeof cargarUsuariosAPI === 'function') {
+          cargarUsuariosAPI(); // Refrescar tabla
+        }
+      });
+
+    } catch (err) {
+      console.error("Error actualizando rol:", err);
+      Swal.fire({
+        title: 'Error',
+        text: err.message,
+        icon: 'error',
+        confirmButtonText: 'Aceptar'
+      });
+    }
+  });
+
+
+  // ===== DESACTIVAR USUARIO (Botón Confirmar del Modal) =====
+  document.getElementById('btnConfirmarEliminar').addEventListener('click', async function () {
+      const userId = this.dataset.userId; 
+      const eliminarUsuarioModal = bootstrap.Modal.getOrCreateInstance(document.getElementById('eliminarUsuarioModal'));
+
+      // Si el ID no existe, salimos
+      if (!userId) {
+          eliminarUsuarioModal.hide(); 
+          return; 
+      }
+
+      try {
+          // Llamada a la API
+          const resp = await fetch(`http://localhost:8000/api/usuarios/${userId}/desactivar`, { 
+              method: "PUT", 
+              headers: {
+                  "Authorization": "Bearer " + localStorage.getItem("token")
+              }
+          });
+          
+          const data = await resp.json(); 
+          
+          if (!resp.ok) {
+              throw new Error(data.message || "Error al desactivar usuario");
+          }
+
+          //Cierra el modal y actualiza la tabla
+          eliminarUsuarioModal.hide(); 
+          
+          Swal.fire({ 
+              title: 'Usuario Desactivado', 
+              text: data.message || 'El usuario ha sido desactivado del sistema.', 
+              icon: 'success', 
+              confirmButtonText: 'Aceptar' 
+          })
+          .then(() => cargarUsuariosAPI());
+          
+      } catch (err) {
+          // Manejo de error: Cerramos el modal y mostramos la alerta.
+          eliminarUsuarioModal.hide(); 
+          console.error("Error desactivando usuario:", err);
+          Swal.fire({ 
+              title: 'Error', 
+              text: err.message, 
+              icon: 'error', 
+              confirmButtonText: 'Aceptar' 
+          });
+      }
+  });
+
+  // ===== NUEVO ACTIVAR USUARIO (Botón Confirmar del Modal) =====
+  document.getElementById('btnConfirmarActivar').addEventListener('click', async function () {
+      const activarUsuarioModal = bootstrap.Modal.getOrCreateInstance(document.getElementById('activarUsuarioModal'));
+
+      try {
+          if (!usuarioActual || !usuarioActual.id) throw new Error("No se pudo determinar el usuario a activar.");
+
+          // Llama a la ruta de backend para reactivar
+          const resp = await fetch(`http://localhost:8000/api/usuarios/${usuarioActual.id}/activar`, {
+              method: "PUT",
+              headers: {
+                  "Authorization": "Bearer " + localStorage.getItem("token")
+              }
+          });
+
+          if (!resp.ok) throw new Error("Error al activar el usuario.");
+
+          activarUsuarioModal.hide();
+          Swal.fire({ 
+              title: 'Usuario Activado', 
+              text: 'El usuario ha sido reactivado y puede iniciar sesión.', 
+              icon: 'success', 
+              confirmButtonText: 'Aceptar' 
+          }).then(() => cargarUsuariosAPI());
+
+      } catch (err) {
+          console.error("Error activando usuario:", err);
+          Swal.fire({ title: 'Error', text: err.message, icon: 'error', confirmButtonText: 'Aceptar' });
+      }
+  });
+  // ===== CARGAR USUARIOS =====
+  async function cargarUsuariosAPI() {
+    try {
+      const resp = await fetch("http://localhost:8000/api/usuarios", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Bearer " + localStorage.getItem("token")
+        }
+      });
+      if (!resp.ok) throw new Error("Error al obtener usuarios");
+
+      const data = await resp.json();
+      usuarios = data.map(u => ({
+        id: u._id,
+        nombre: u.nombre,
+        apellidos: u.apellido,
+        correo: u.email,
+        cedula: u.cedula || "N/A",
+        roles: Array.isArray(u.rol) ? u.rol : [u.rol || "Sin rol"],
+        activo: u.activo
+      }));
+
+      mostrarUsuarios();
+
+    } catch (err) {
+      console.error("Error cargando usuarios:", err);
+      alert("No se pudieron cargar los usuarios.");
+    }
+  }
+
+  // ===== MOSTRAR USUARIOS =====
+  function mostrarUsuarios() {
+    const tbody = document.querySelector("tbody");
+    tbody.innerHTML = "";
+
+    usuarios.forEach(u => {
+      const isDesactivado = u.activo === false; // NUEVO Verificar que el backend devuelve el campo 'activo'
+
+      let rolesHTML; 
+      // Si está desactivado, solo mostramos la etiqueta gris
+        if (isDesactivado) {
+            rolesHTML = `<span class="badge bg-secondary">DESACTIVADO</span>`;
+        } else {
+            // Si está activo, mostramos los roles normales
+            rolesHTML = u.roles.map(r => {
+                let color = "bg-primary";
+                if (r.toLowerCase() === "docente") color = "background-color: #EC5832; border-color: #EC5832; color: white;";
+                if (r.toLowerCase() === "estudiante") color = "background-color: #8ABD3C; border-color: #8ABD3C; color: white;";
+                if (r.toLowerCase() === "tutor") color = "background-color: #007bff; border-color: #007bff; color: white;";
+                return `<span class="badge me-1" style="${color}">${r}</span>`;
+            }).join(" ");
+        }
+
+      const tr = document.createElement("tr");
+
+      
+      if (isDesactivado) {
+            tr.classList.add('table-secondary'); 
+        }
+
+        tr.innerHTML = `
+            <td class="text-gray-900">${u.cedula}</td>
+            <td class="fw-bold">${u.nombre}</td>
+            <td class="fw-bold">${u.apellidos}</td>
+            <td class="fw-bold">${u.correo}</td>
+            <td>${rolesHTML}</td>
+
+            <td>
+                ${isDesactivado 
+                    ? `<button class="btn btn-sm btn-success text-white fw-bold" onclick="abrirAccion('activar', '${u.id}')" data-bs-toggle="modal" data-bs-target="#activarUsuarioModal">Activar</button>` // Botón de Activar
+                    : `<button class="btn btn-sm btn-primary me-2" onclick="abrirAccion('roles', '${u.id}')" data-bs-toggle="modal" data-bs-target="#gestionRolesModal">Gestionar Roles</button>
+                       <button class="btn btn-sm btn-danger" onclick="abrirAccion('eliminar', '${u.id}')" data-bs-toggle="modal" data-bs-target="#eliminarUsuarioModal">Desactivar</button>`
+                }
+        </td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
+  // ===== ABRIR MODALES =====
+  window.abrirAccion = function (tipo, usuarioId) {
+    usuarioActual = usuarios.find(u => u.id === usuarioId);
+    if (!usuarioActual) return;
+
+    const nombreCompleto = `${usuarioActual.nombre || 'N/A'} ${usuarioActual.apellidos || 'N/A'} (${usuarioActual.cedula || 'N/A'})`;
+
+    // Lógica para Desactivar
+    if (tipo === "eliminar") {
+        document.getElementById("usuarioEliminarNombre").innerText = nombreCompleto;
+        document.getElementById("btnConfirmarEliminar").dataset.userId = usuarioId; 
+    }else if (tipo === "activar") {
+        document.getElementById("usuarioActivarNombre").innerText = `${usuarioActual.nombre} ${usuarioActual.apellidos} (${usuarioActual.cedula})`;
+        document.getElementById("btnConfirmarActivar").dataset.userId = usuarioId;
+    } else if (tipo === "roles") {
+      document.getElementById("rolesUsuarioNombre").innerText = `${usuarioActual.nombre} ${usuarioActual.apellidos} (${usuarioActual.cedula})`;
+      document.getElementById('editRolAdmin').checked = usuarioActual.roles.includes('Admin');
+      document.getElementById('editRolDocente').checked = usuarioActual.roles.includes('Docente');
+      document.getElementById('editRolEstudiante').checked = usuarioActual.roles.includes('Estudiante');
+      document.getElementById('editRolTutor').checked = usuarioActual.roles.includes('Tutor');
+    }
+  }
+
+  // ===== INICIALIZAR =====
+  cargarUsuariosAPI();
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  <script src="../assets/js/validarAcceso.js" defer></script>
+  <script src="../assets/js/cargarUsuarioNavbar.js"></script>
+</body>
+
+</html>

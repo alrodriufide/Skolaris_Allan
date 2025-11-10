@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Skolaris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon y estilos -->
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+    <link type="text/css" href="../css/volt.css" rel="stylesheet">
+
+    <!-- Fuentes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <section class="vh-lg-100 mt-5 mt-lg-0 bg-soft d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center form-bg-image"
+                    data-background-lg="../../assets/img/illustrations/signin.svg">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div id="loginForm"
+                            class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                            <div class="text-center text-md-center mb-4 mt-md-0">
+                                <!-- Logo añadido aquí -->
+                                <div class="mb-4" style="text-align: center;">
+                                    <img src="../assets/img/brand/EscuelaLogo.png" alt="Skolaris Logo"
+                                        style="max-height: 80px; width: auto;">
+                                </div>
+                                <h1 class="mb-0 h3" style="font-family: 'Poppins', sans-serif; color: #2E384D;">Inicio
+                                    de Sesión</h1>
+                            </div>
+                            <form class="mt-4" id="formLogin">
+                                <div class="form-group mb-4">
+                                    <label for="email" style="font-family: 'Inter', sans-serif;">Correo
+                                        Electrónico</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <svg class="icon icon-xs text-gray-600" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
+                                                </path>
+                                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                        <input type="email" class="form-control" placeholder="example@company.com"
+                                            id="email" autofocus required style="font-family: 'Roboto', sans-serif;">
+                                    </div>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="password" style="font-family: 'Inter', sans-serif;">Contraseña</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <svg class="icon icon-xs text-gray-600" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </span>
+                                        <input type="password" placeholder="Password" class="form-control" id="password"
+                                            required style="font-family: 'Roboto', sans-serif;">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-top mb-4">
+                                    <div>
+                                        <a href="olvide_contrasena.html" class="small text-right"
+                                            style="font-family: 'Inter', sans-serif; color: #000000; font-weight: 600;text-decoration: none; transition: all 0.2s;">
+                                            Olvidé la contraseña
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn"
+                                        style="background-color: #2E384D; color: white; font-family: 'Inter', sans-serif; font-weight: 600;">Iniciar
+                                        Sesión</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <script>
+  const paginasPermitidas = {
+    estudiante: [
+      'actividades_usuario.html',
+      'asistencia_usuario.html',
+      'calificaciones_usuario.html',
+      'comunicacion_usuario.html',
+      'docentes_usuario.html',
+      'horarios_usuario.html',
+      'inicio_sesion.html',
+      'olvide_contrasena.html',
+      'perfil.html',
+      'reportes_usuario.html',
+      'Soporte.html',
+      'ver_normativa.html',
+      'pagina_principal.html'
+    ],
+    admin: [
+      'actividades_usuario.html',
+      'asistencia_usuario.html',
+      'calificaciones_usuario.html',
+      'comunicacion_usuario.html',
+      'docentes_usuario.html',
+      'horarios_usuario.html',
+      'inicio_sesion.html',
+      'olvide_contrasena.html',
+      'perfil.html',
+      'reportes_usuario.html',
+      'Soporte.html',
+      'ver_normativa.html',
+      'pagina_principal.html',
+      'actividades_docente.html',
+      'administrador.html',
+      'asistencia_docente.html',
+      'calificaciones_docente.html',
+      'comunicacion_docente.html',
+      'docentes_administrador.html',
+      'horarios_administrador.html',
+      'horarios_docente.html',
+      'reportes_docente.html'
+    ],
+    profesor: [
+      'asistencia_docente.html',
+      'calificaciones_docente.html',
+      'comunicacion_docente.html',
+      'horarios_docente.html',
+      'inicio_sesion.html',
+      'olvide_contrasena.html',
+      'perfil.html',
+      'reportes_docente.html',
+      'Soporte.html',
+      'ver_normativa.html',
+      'pagina_principal.html'
+    ]
+  };
+
+  document.getElementById('formLogin').addEventListener('submit', async function (e) {
+  e.preventDefault();
+
+  const email = document.getElementById('email').value;
+  const contrasena = document.getElementById('password').value;
+
+  try {
+    const response = await fetch('http://localhost:8000/api/auth/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, contrasena })
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      console.log('Login exitoso:', data);
+
+      // ⚡ Ajuste para rol como array
+      const roles = data.user?.rol || [];
+      const userRole = roles[0]?.toLowerCase(); // Tomamos el primer rol
+      if (!userRole || !paginasPermitidas[userRole]) {
+        alert('Rol no válido o no asignado.');
+        return;
+      }
+
+      // Guardar datos en localStorage
+      localStorage.setItem('token', data.token);
+      localStorage.setItem('userRole', userRole);
+      localStorage.setItem('modulosPermitidos', JSON.stringify(paginasPermitidas[userRole]));
+      localStorage.setItem('userData', JSON.stringify(data.user));
+
+      console.log('Módulos permitidos para el rol:', paginasPermitidas[userRole]);
+
+      // Redirigir a la página principal
+      window.location.href = '../pagina_principal.html';
+    } else {
+      alert(data.message || data.error || 'Credenciales inválidas');
+    }
+  } catch (error) {
+    console.error('Error en el login:', error);
+    alert(error.message || 'Error al conectar con el servidor');
+  }
+});
+
+// Mostrar/ocultar módulos según rol usando data-modulo
+function mostrarOpcionesSegunRol() {
+  const modulosPermitidos = JSON.parse(localStorage.getItem('modulosPermitidos')) || [];
+  const elementosMenu = document.querySelectorAll('[data-modulo]');
+
+  elementosMenu.forEach(el => {
+    const modulo = el.getAttribute('data-modulo');
+    el.style.display = modulosPermitidos.includes(modulo) ? '' : 'none';
+  });
+}
+
+// Ocultar links del navbar según rol sin usar data-modulo
+function ocultarLinksSegunRol() {
+  const rol = localStorage.getItem('userRole');
+  if (!rol || !paginasPermitidas[rol]) return;
+
+  const enlaces = document.querySelectorAll('a.nav-link');
+
+  enlaces.forEach(enlace => {
+    const href = enlace.getAttribute('href').split('/').pop();
+    enlace.style.display = paginasPermitidas[rol].includes(href) ? '' : 'none';
+  });
+}
+
+// Ejecutar al cargar la página
+window.addEventListener('DOMContentLoaded', () => {
+  ocultarLinksSegunRol();
+  mostrarOpcionesSegunRol();
+});
+</script>
+
+
+</body>
+
+</html>
