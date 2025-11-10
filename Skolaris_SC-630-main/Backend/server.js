@@ -15,6 +15,7 @@ const asistenciaRoutes = require('./routes/asistenciaRoutes'); // ruta asistenci
 const gradesRoutes = require('./routes/gradesRoutes'); // rutas calificaciones
 const reportsRoutes = require('./routes/reportsRoutes'); // rutas reportes
 const receiptsRoutes = require('./routes/receiptsRoutes'); // rutas recibos
+const simpleRoutes = require('./routes/simpleRoutes'); // rutas base de datos simple
 
 // Configuración
 const cors = require('cors');
