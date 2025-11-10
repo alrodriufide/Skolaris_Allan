@@ -12,6 +12,9 @@ const claseRoutes = require('./routes/claseRoutes'); // ruta clases
 const grupoRoutes = require('./routes/grupoRoutes'); // ruta grupos
 const academicoRoutes = require('./routes/academicoRoutes'); //ruta agrupada para docentes
 const asistenciaRoutes = require('./routes/asistenciaRoutes'); // ruta asistencias
+const gradesRoutes = require('./routes/gradesRoutes'); // rutas calificaciones
+const reportsRoutes = require('./routes/reportsRoutes'); // rutas reportes
+const receiptsRoutes = require('./routes/receiptsRoutes'); // rutas recibos
 
 // Configuración
 const cors = require('cors');
