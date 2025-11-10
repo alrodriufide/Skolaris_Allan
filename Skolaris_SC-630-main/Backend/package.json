@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
+    "start:simple": "node server-no-mongo.js",
     "seed": "node seedDatabase.js",
     "seed:dev": "node seedDatabase.js"
   },
