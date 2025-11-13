@@ -12,6 +12,11 @@ const claseRoutes = require('./routes/claseRoutes'); // ruta clases
 const grupoRoutes = require('./routes/grupoRoutes'); // ruta grupos
 const academicoRoutes = require('./routes/academicoRoutes'); //ruta agrupada para docentes
 const asistenciaRoutes = require('./routes/asistenciaRoutes'); // ruta asistencias
+const gradesRoutes = require('./routes/gradesRoutes'); // rutas calificaciones
+const reportsRoutes = require('./routes/reportsRoutes'); // rutas reportes
+const receiptsRoutes = require('./routes/receiptsRoutes'); // rutas recibos
+const simpleRoutes = require('./routes/simpleRoutes'); // rutas base de datos simple
+const simpleAuthRoutes = require('./routes/simpleAuthRoutes'); // rutas auth simple
 
 // Configuración
 const cors = require('cors');
@@ -33,6 +38,11 @@ app.use('/api/grupos', grupoRoutes); // ruta grupos
 app.use('/api/clases', claseRoutes); // ruta clases
 app.use('/api/academico', academicoRoutes);
 app.use('/api/asistencia', asistenciaRoutes); // ruta asistencias
+app.use('/api/grades', gradesRoutes); // rutas calificaciones
+app.use('/api/reports', reportsRoutes); // rutas reportes
+app.use('/api/receipts', receiptsRoutes); // rutas recibos
+app.use('/api/simple', simpleRoutes); // rutas base de datos simple
+app.use('/api/simple-auth', simpleAuthRoutes); // rutas auth simple
 
 // Error handler
 app.use((err, req, res, next) => {

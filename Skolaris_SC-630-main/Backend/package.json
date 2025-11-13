@@ -4,7 +4,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "start:simple": "node server-no-mongo.js",
+    "seed": "node seedDatabase.js",
+    "seed:dev": "node seedDatabase.js"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +22,12 @@
     "mongoose": "^8.15.1",
     "msnodesqlv8": "^4.5.0",
     "mssql": "^11.0.1",
-    "tedious": "^18.6.1"
+    "tedious": "^18.6.1",
+    "pdfkit": "^0.15.0",
+    "pdfmake": "^0.2.10",
+    "nodemailer": "^6.9.8",
+    "joi": "^17.11.0",
+    "moment": "^2.29.4"
   },
   "description": ""
 }

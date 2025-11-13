@@ -18,6 +18,8 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- Sweet Alert -->
   <link type="text/css" href="../vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
   <!-- Notyf -->
@@ -442,40 +444,150 @@
             <h3 class="fs-5 mb-0" style="font-family: 'Poppins', sans-serif; font-weight: bold;">Vista de las Calificaciones</h3>
           </div>
           <div class="card-body">
-            <h4 class="text-center mb-4 fw-bold" style="font-family: 'Poppins', sans-serif;">Módulo Calificaciones</h4>
+            <!-- Header with controls -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h4 class="mb-0 fw-bold" style="font-family: 'Poppins', sans-serif;">
+                <i class="fas fa-graduation-cap me-2"></i>Mis Calificaciones
+              </h4>
+              <div class="d-flex gap-2">
+                <div class="dropdown">
+                  <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    <i class="fas fa-filter"></i> Filtrar
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" onclick="studentGradeManager.filterGrades('all')">Todas las materias</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="studentGradeManager.filterGrades('graded')">Solo calificadas</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="studentGradeManager.filterGrades('pending')">Pendientes</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    <i class="fas fa-download"></i> Exportar
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" onclick="studentGradeManager.exportGrades('pdf')">
+                      <i class="fas fa-file-pdf me-2"></i>Exportar a PDF
+                    </a></li>
+                    <li><a class="dropdown-item" href="#" onclick="studentGradeManager.exportGrades('excel')">
+                      <i class="fas fa-file-excel me-2"></i>Exportar a Excel
+                    </a></li>
+                  </ul>
+                </div>
+                <button class="btn btn-outline-success btn-sm" onclick="studentGradeManager.generateReport('current')">
+                  <i class="fas fa-file-alt me-2"></i>Generar Reporte
+                </button>
+              </div>
+            </div>
+
+            <!-- Semester selector -->
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <label for="semesterSelector" class="form-label">Seleccionar Semestre:</label>
+                <select id="semesterSelector" class="form-select">
+                  <option value="">Cargando semestres...</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="searchInput" class="form-label">Buscar:</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+                  <input type="text" id="searchInput" class="form-control" placeholder="Buscar materias, comentarios...">
+                </div>
+              </div>
+            </div>
+
+            <!-- Statistics cards -->
+            <div class="row mb-4" id="statisticsCards">
+              <div class="col-md-3">
+                <div class="card bg-primary text-white">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Promedio</h5>
+                    <h2 class="card-text" id="statAverage">0.0</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card bg-success text-white">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Total Materias</h5>
+                    <h2 class="card-text" id="statTotal">0</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card bg-info text-white">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Calificadas</h5>
+                    <h2 class="card-text" id="statGraded">0</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card bg-warning text-white">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Pendientes</h5>
+                    <h2 class="card-text" id="statMissing">0</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Progress and charts -->
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <div id="progressChart"></div>
+              </div>
+              <div class="col-md-6">
+                <div id="gradeDistribution"></div>
+              </div>
+            </div>
+
+            <!-- View toggle -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="mb-0">Calificaciones del Semestre</h5>
+              <div class="btn-group" role="group">
+                <button type="button" id="viewCompact" class="btn btn-outline-secondary btn-sm active">
+                  <i class="fas fa-list"></i> Compacta
+                </button>
+                <button type="button" id="viewDetailed" class="btn btn-outline-secondary btn-sm">
+                  <i class="fas fa-th-list"></i> Detallada
+                </button>
+              </div>
+            </div>
+
             <!-- Sección de Calificaciones del Semestre Actual -->
             <div id="calificacionesActuales">
-              <table class="table table-bordered align-middle text-center" style="font-family: 'Roboto', sans-serif;">
-                <thead class="thead-light">
-                  <tr>
-                    <th>Materia</th>
-                    <th>Calificación</th>
-                    <th>Comentario</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Matemáticas</td>
-                    <td>8.5</td>
-                    <td>Buen rendimiento</td>
-                  </tr>
-                  <tr>
-                    <td>Historia</td>
-                    <td>No Disponible</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Lengua</td>
-                    <td>9.0</td>
-                    <td>Excelente</td>
-                  </tr>
-                </tbody>
-              </table>
-    
+              <div class="table-responsive">
+                <table class="table table-bordered align-middle text-center" style="font-family: 'Roboto', sans-serif;">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Materia</th>
+                      <th>Calificación</th>
+                      <th>Comentario</th>
+                      <th>Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="4" class="text-center py-4">
+                        <div class="text-muted">
+                          <i class="fas fa-spinner fa-spin fa-2x mb-3"></i>
+                          <p>Cargando calificaciones...</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
               <!-- Botones con margen superior -->
               <div class="d-flex justify-content-between mt-4">
-                <button id="btnSemestreAnterior" class="btn btn-primary" style="font-family: 'Inter', sans-serif;">Ver Semestre Anterior</button>
-                <button id="btnGenerarReporte" class="btn btn-outline-success" style="background-color: #8ABD3C; border-color: #8ABD3C; font-family: 'Inter', sans-serif; color: white;">Generar Reporte</button>
+                <button id="btnSemestreAnterior" class="btn btn-outline-primary">
+                  <i class="fas fa-history me-2"></i>Ver Semestre Anterior
+                </button>
+                <button id="btnGenerarReporte" class="btn btn-success" style="background-color: #8ABD3C; border-color: #8ABD3C;">
+                  <i class="fas fa-file-pdf me-2"></i>Generar Reporte
+                </button>
               </div>
             </div>
             <!-- Sección de Calificaciones del Semestre Anterior -->
@@ -617,6 +729,12 @@
 
   <!-- Volt JS -->
   <script src="../assets/js/volt.js"></script>
+
+  <!-- API Service -->
+  <script src="../assets/js/apiService.js"></script>
+
+  <!-- Student Grade Manager -->
+  <script src="../assets/js/studentGradeManager.js"></script>
 
   <script src="../assets/js/validarAcceso.js" defer></script>
 
